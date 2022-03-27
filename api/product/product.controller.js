@@ -11,7 +11,7 @@ module.exports = {
             name : req.body.name,
             price    : req.body.price,
             stock : req.body.stock,
-            image : req.body.image
+            // image : req.body.image
         }
         add(data_product,(err,results)=>{
             if(err){
@@ -57,11 +57,10 @@ module.exports = {
 
     controllerUpdate:(req,res)=>{
         data_product = {
-            product_id : req.body.product_id,
             name : req.body.name,
             price : req.body.price,
             stock : req.body.stock,
-            image : req.body.image
+            // image : req.body.image
         }
         
         update(data_product,(err,results)=>{
